@@ -16,6 +16,6 @@ import java.util.List;
 public class KMeansCSVFile {
     public static void main(String[] args) throws FileNotFoundException, Exception {        
         String file = "iris.csv";
-        readCSVFile.readAllDataAtOnce(file);
+        readCSVFile.readDataLineByLine(file);
     }
 }

@@ -3,25 +3,29 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package KMeans;
+package kmeans;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.ArrayList;
+
+import jxl.Cell;
+import jxl.CellType;
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.read.biff.BiffException;
 
 /**
  *
- * @author basisb06
+ * @author Aureli Isaias
  */
-public class KMeans_Ex4a {
+public class readExcel {
+    private String inputFile;
+    static String [][] data = new String[7][2];
     private static final int NUM_CLUSTERS = 2;    // Total clusters.
     private static final int TOTAL_DATA = 7;      // Total data points.
     
-    private static final double SAMPLES[][] = new double[][] {{1.0, 1.0}, 
-                                                                {1.5, 2.0}, 
-                                                                {3.0, 4.0}, 
-                                                                {5.0, 7.0}, 
-                                                                {3.5, 5.0}, 
-                                                                {4.5, 5.0}, 
-                                                                {3.5, 4.5}};
+    private static double SAMPLES[][] = new double[7][2];
     
     private static ArrayList<Data> dataSet = new ArrayList<Data>();
     private static ArrayList<Centroid> centroids = new ArrayList<Centroid>();
@@ -233,9 +237,42 @@ public class KMeans_Ex4a {
             return this.mY;
         }
     }
-    
-    public static void main(String[] args)
-    {
+
+    public void setInputFile(String inputFile) {
+        this.inputFile = inputFile;
+    }
+
+    public void read() throws IOException  {
+        File inputWorkbook = new File(inputFile);
+        Workbook w;
+        try {
+            w = Workbook.getWorkbook(inputWorkbook);
+            // Get the first sheet
+            Sheet sheet = w.getSheet(0);
+            // Loop over first 10 column and lines
+
+            for (int j = 0; j < sheet.getColumns(); j++) {
+                for (int i = 0; i < sheet.getRows(); i++) {
+                    Cell cell = sheet.getCell(j, i);
+                    data[i][j] = cell.getContents();
+                }
+            }
+        } catch (BiffException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void main(String[] args) throws IOException {
+        readExcel test = new readExcel();
+        test.setInputFile("G:/NetBeansProjects/KMean/KMeans/newFile.xls");
+        test.read();
+        
+        for (int i = 0; i < data.length; i++) {
+            for (int j = 0; j < data[i].length; j++) {
+                SAMPLES[i][j] = Double.valueOf(data[i][j]);
+            }
+        }
+        
         initialize();
         kMeanCluster();
         

@@ -16,6 +16,7 @@ import java.io.Reader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.lang.String;
 
 /**
  *
@@ -62,7 +63,8 @@ public class readCSVFile {
 
             // create csvReader object passing 
             // file reader as a parameter 
-            CSVReader csvReader = new CSVReader(filereader); 
+            CSVReader csvReader = new CSVReaderBuilder(filereader)
+                                      .withSkipLines(3).build(); 
             String[] nextRecord; 
 
             // we are going to read data line by line 
@@ -92,7 +94,8 @@ public class readCSVFile {
 
             // print Data 
             for (String[] row : allData) { 
-                for (String cell : row) { 
+                for (String cell : row) {
+//                    String [row][cell] data = cell; 
                     System.out.print(cell + "\t"); 
                 } 
                 System.out.println(); 
