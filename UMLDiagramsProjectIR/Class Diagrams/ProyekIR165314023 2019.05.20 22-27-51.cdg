@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ProyekIR165314023">
+  <ClassDiagramComponents>
+    <Class name="AddDocumentDialog" package="MesinPencari" visibility="public" xPosition="15.0" yPosition="20.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTextArea1" type="javax.swing.JTextArea" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField2" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="java.awt.Frame" name="parent"/>
+          <Argument type="boolean" name="modal"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jTextField2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="MesinPencari" package="MesinPencari" visibility="public" xPosition="13.0" yPosition="632.0">
+      <Fields>
+        <Field name="index" type="InvertedIndex" visibility="public" isStatic="true"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jMenu1" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenu2" type="javax.swing.JMenu" visibility="private"/>
+        <Field name="jMenuBar1" type="javax.swing.JMenuBar" visibility="private"/>
+        <Field name="jMenuItem1" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem2" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem3" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jMenuItem4" type="javax.swing.JMenuItem" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jSpinner1" type="javax.swing.JSpinner" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+        <Field name="refresh" type="javax.swing.JButton" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jMenuItem1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jMenuItem4ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jMenuItem3ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="jMenuItem2ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="refreshActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+        <Method name="getIndex" returnType="InvertedIndex" visibility="private"/>
+        <Method name="setIndex" returnType="void" visibility="public">
+          <Argument type="InvertedIndex" name="index"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SearchDialog" package="MesinPencari" visibility="public" xPosition="13.0" yPosition="337.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTable1" type="javax.swing.JTable" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="java.awt.Frame" name="parent"/>
+          <Argument type="boolean" name="modal"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Document" package="Model" visibility="public" xPosition="796.0" yPosition="20.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="content" type="String" visibility="private"/>
+        <Field name="realContent" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="content"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="content"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getContent" returnType="String" visibility="public"/>
+        <Method name="setContent" returnType="void" visibility="public">
+          <Argument type="String" name="content"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getRealContent" returnType="String" visibility="public"/>
+        <Method name="setRealContent" returnType="void" visibility="public">
+          <Argument type="String" name="realContent"/>
+        </Method>
+        <Method name="getListofTerm" returnType="String[]" visibility="public"/>
+        <Method name="getListofPosting" returnType="ArrayList&lt;Posting&gt;" visibility="public"/>
+        <Method name="readFile" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="File" name="file"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="compareTo" returnType="int" visibility="public">
+          <Argument type="Document" name="t"/>
+        </Method>
+        <Method name="removeStopWord" returnType="void" visibility="public"/>
+        <Method name="Stemming" returnType="void" visibility="public"/>
+        <Method name="IndonesiaStem" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="InvertedIndex" package="Model" visibility="public" xPosition="858.0" yPosition="632.0">
+      <Fields>
+        <Field name="listOfDocument" type="ArrayList&lt;Document&gt;" visibility="private"/>
+        <Field name="dictionary" type="ArrayList&lt;Term&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="addNewDocument" returnType="void" visibility="public">
+          <Argument type="Document" name="document"/>
+        </Method>
+        <Method name="getUnsortedPostingList" returnType="ArrayList&lt;Posting&gt;" visibility="public"/>
+        <Method name="getUnsortedPostingListWithTermNumber" returnType="ArrayList&lt;Posting&gt;" visibility="public"/>
+        <Method name="getSortedPostingList" returnType="ArrayList&lt;Posting&gt;" visibility="public"/>
+        <Method name="getSortedPostingListWithTermNumber" returnType="ArrayList&lt;Posting&gt;" visibility="public"/>
+        <Method name="makeDictionary" returnType="void" visibility="public"/>
+        <Method name="makeDictionaryWithTermNumber" returnType="void" visibility="public"/>
+        <Method name="getListOfDocument" returnType="ArrayList&lt;Document&gt;" visibility="public"/>
+        <Method name="getDictionary" returnType="ArrayList&lt;Term&gt;" visibility="public"/>
+        <Method name="setListOfDocument" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Document&gt;" name="listOfDocument"/>
+        </Method>
+        <Method name="setDictionary" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Term&gt;" name="dictionary"/>
+        </Method>
+        <Method name="search" returnType="ArrayList&lt;Posting&gt;" visibility="public">
+          <Argument type="String" name="query"/>
+        </Method>
+        <Method name="searchOneWord" returnType="ArrayList&lt;Posting&gt;" visibility="public">
+          <Argument type="String" name="query"/>
+        </Method>
+        <Method name="intersection" returnType="ArrayList&lt;Posting&gt;" visibility="public">
+          <Argument type="ArrayList&lt;Posting&gt;" name="p1"/>
+          <Argument type="ArrayList&lt;Posting&gt;" name="p2"/>
+        </Method>
+        <Method name="getDocumentFrequency" returnType="int" visibility="public">
+          <Argument type="String" name="term"/>
+        </Method>
+        <Method name="getInverseDocumentFrequency" returnType="double" visibility="public">
+          <Argument type="String" name="term"/>
+        </Method>
+        <Method name="getTermFrequency" returnType="int" visibility="public">
+          <Argument type="String" name="term"/>
+          <Argument type="int" name="idDocument"/>
+        </Method>
+        <Method name="makeTFIDF" returnType="ArrayList&lt;Posting&gt;" visibility="public">
+          <Argument type="int" name="idDocument"/>
+        </Method>
+        <Method name="getInnerProduct" returnType="double" visibility="public">
+          <Argument type="ArrayList&lt;Posting&gt;" name="p1"/>
+          <Argument type="ArrayList&lt;Posting&gt;" name="p2"/>
+        </Method>
+        <Method name="getQueryPosting" returnType="ArrayList&lt;Posting&gt;" visibility="public">
+          <Argument type="String" name="term"/>
+        </Method>
+        <Method name="getLengthOfPosting" returnType="double" visibility="public">
+          <Argument type="ArrayList&lt;Posting&gt;" name="posting"/>
+        </Method>
+        <Method name="getCosineSimilarity" returnType="double" visibility="public">
+          <Argument type="ArrayList&lt;Posting&gt;" name="posting"/>
+          <Argument type="ArrayList&lt;Posting&gt;" name="posting1"/>
+        </Method>
+        <Method name="searchTFIDF" returnType="ArrayList&lt;SearchingResult&gt;" visibility="public">
+          <Argument type="String" name="query"/>
+        </Method>
+        <Method name="searchCosineSimilarity" returnType="ArrayList&lt;SearchingResult&gt;" visibility="public">
+          <Argument type="String" name="query"/>
+        </Method>
+        <Method name="readDirectory" returnType="void" visibility="public">
+          <Argument type="File" name="directory"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Posting" package="Model" visibility="public" xPosition="1409.0" yPosition="280.0">
+      <Fields>
+        <Field name="term" type="String" visibility="private"/>
+        <Field name="document" type="Document" visibility="private"/>
+        <Field name="numberOfTerm" type="int" visibility="private"/>
+        <Field name="weight" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Document" name="document"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="term"/>
+          <Argument type="Document" name="document"/>
+        </Constructor>
+        <Constructor visibility="package"/>
+      </Constructors>
+      <Methods>
+        <Method name="getDocument" returnType="Document" visibility="public"/>
+        <Method name="setDocument" returnType="void" visibility="public">
+          <Argument type="Document" name="document"/>
+        </Method>
+        <Method name="getTerm" returnType="String" visibility="public"/>
+        <Method name="setTerm" returnType="void" visibility="public">
+          <Argument type="String" name="term"/>
+        </Method>
+        <Method name="compareTo" returnType="int" visibility="public">
+          <Argument type="Posting" name="posting"/>
+        </Method>
+        <Method name="getNumberOfTerm" returnType="int" visibility="public"/>
+        <Method name="setNumberOfTerm" returnType="void" visibility="public">
+          <Argument type="int" name="numberOfTerm"/>
+        </Method>
+        <Method name="getWeight" returnType="double" visibility="public"/>
+        <Method name="setWeight" returnType="void" visibility="public">
+          <Argument type="double" name="weight"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SearchingResult" package="Model" visibility="public" xPosition="1129.0" yPosition="6.0">
+      <Fields>
+        <Field name="FAKTOR" type="int" visibility="public" isStatic="true" isFinal="true"/>
+        <Field name="similarity" type="double" visibility="private"/>
+        <Field name="document" type="Document" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="double" name="similarity"/>
+          <Argument type="Document" name="document"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getSimilarity" returnType="double" visibility="public"/>
+        <Method name="setSimilarity" returnType="void" visibility="public">
+          <Argument type="double" name="similarity"/>
+        </Method>
+        <Method name="getDocument" returnType="Document" visibility="public"/>
+        <Method name="setDocument" returnType="void" visibility="public">
+          <Argument type="Document" name="document"/>
+        </Method>
+        <Method name="compareTo" returnType="int" visibility="public">
+          <Argument type="SearchingResult" name="result"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Term" package="Model" visibility="public" xPosition="1448.0" yPosition="774.0">
+      <Fields>
+        <Field name="term" type="String" visibility="private"/>
+        <Field name="postingList" type="ArrayList&lt;Posting&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="term"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNumberOfDocument" returnType="int" visibility="public"/>
+        <Method name="getTerm" returnType="String" visibility="public"/>
+        <Method name="setTerm" returnType="void" visibility="public">
+          <Argument type="String" name="term"/>
+        </Method>
+        <Method name="getPostingList" returnType="ArrayList&lt;Posting&gt;" visibility="public"/>
+        <Method name="setPostingList" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Posting&gt;" name="postingList"/>
+        </Method>
+        <Method name="compareTo" returnType="int" visibility="public">
+          <Argument type="Term" name="o"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="Model.Term" target="Model.Term" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.InvertedIndex" target="Model.SearchingResult" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.Term" target="Model.Posting" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="document" source="Model.SearchingResult" target="Model.Document" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="postingList" source="Model.Term" target="Model.Posting" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Posting&gt;"/>
+    <UseRelation source="Model.Document" target="Model.Posting" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.SearchingResult" target="Model.Document" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.InvertedIndex" target="Model.Posting" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.Posting" target="Model.Posting" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="index" source="MesinPencari.MesinPencari" target="Model.InvertedIndex" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="dictionary" source="Model.InvertedIndex" target="Model.Term" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Term&gt;"/>
+    <UseRelation source="Model.Document" target="Model.Document" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.Posting" target="Model.Document" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="MesinPencari.MesinPencari" target="Model.InvertedIndex" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.SearchingResult" target="Model.SearchingResult" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="document" source="Model.Posting" target="Model.Document" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="Model.InvertedIndex" target="Model.Document" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="listOfDocument" source="Model.InvertedIndex" target="Model.Document" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Document&gt;"/>
+    <UseRelation source="Model.InvertedIndex" target="Model.Term" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
